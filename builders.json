@@ -1,0 +1,10 @@
+{
+  "$schema": "@angular-devkit/architect/src/builders-schema.json",
+  "builders": {
+    "ng-packagr": {
+      "implementation": "./dist/ng-packagr",
+      "schema": "./dist/ng-packagr/schema.json",
+      "description": "Build a library with ng-packagr."
+    }
+  }
+}

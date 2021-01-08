@@ -1,0 +1,19 @@
+{
+  "name": "@nontangent/angular-package-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "builders": "builders.json",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "postbuild": "cp src/ng-packagr/schema.json dist/ng-packagr/schema.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular-devkit/build-angular": "^0.1100.6"
+  }
+}
