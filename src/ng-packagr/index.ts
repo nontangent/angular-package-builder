@@ -11,7 +11,7 @@ import { Observable, from } from 'rxjs';
 import { mapTo, switchMap } from 'rxjs/operators';
 import { Schema as NgPackagrBuilderOptions } from '@angular-devkit/build-angular/src/ng-packagr/schema';
 import { STYLESHEET_PROCESSOR_TOKEN } from 'ng-packagr/lib/styles/stylesheet-processor.di';
-import { StylesheetProcessor } from './stylesheet-processor';
+import { MyStylesheetProcessor } from './stylesheet-processor';
 
 
 async function initialize(
@@ -24,7 +24,7 @@ async function initialize(
 
   packager.withProviders([{
     provide: STYLESHEET_PROCESSOR_TOKEN,
-    useFactory: () => StylesheetProcessor,
+    useFactory: () => MyStylesheetProcessor,
     deps: [],
   }]);
 
